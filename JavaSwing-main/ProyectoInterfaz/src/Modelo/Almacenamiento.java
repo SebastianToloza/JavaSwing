@@ -11,11 +11,11 @@ public class Almacenamiento {
     }
     
     public void guardarVehiculo(Vehiculo objvehicu){   
-        this.objVehiculos.add(objvehicu);
+        objVehiculos.add(objvehicu);
     }
 
     public ArrayList<Vehiculo> getObjVehiculos() {
-        return this.objVehiculos;
+        return objVehiculos;
     }
 
     public void setObjVehiculos(ArrayList<Vehiculo> objVehiculos) {

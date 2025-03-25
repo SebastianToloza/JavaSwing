@@ -4,10 +4,9 @@ package Modelo;
 public class Vehiculo {
     private  int serial_vehiculo;
     private String modelo_vehivulo;
-    
-    public Vehiculo(int serial,String modelo){
-        this.modelo_vehivulo=modelo;
-        this.serial_vehiculo=serial;
+    public Vehiculo(){
+        this.modelo_vehivulo="";
+        this.serial_vehiculo=0;
     
     }
     public void conexionBaseDeDatos(){
@@ -17,7 +16,11 @@ public class Vehiculo {
 
     }
     
-    
+    public void guardarDatos(int serial,String modelo){
+        this.modelo_vehivulo=modelo;
+        this.serial_vehiculo=serial;
+        
+    }
     public int getSerial_vehiculo() {
         return serial_vehiculo;
     }
